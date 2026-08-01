@@ -1,8 +1,32 @@
 aid: rivet-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rivet-health.png
 name: Rivet Health
-description: Rivet Health is a company surfaced as a portfolio company of menlo-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Rivet Health is a cloud-based revenue cycle management (RCM) platform for
+  healthcare providers, spanning practices, specialty groups, and hospitals.
+  Its software brings together three core modules: Revenue Diagnostics (AI-driven
+  revenue forecasting, real-time reporting, and denial prevention), Payer
+  Performance (contract management, payer benchmarking, and fee-schedule
+  administration), and Patient Pricing (automated patient cost estimates and
+  No Surprises Act Good Faith Estimates). Rivet describes itself as an agnostic
+  platform that integrates with 30+ practice-management systems, EHRs, and
+  clearinghouses — including Epic, athenahealth, eClinicalWorks, AdvancedMD,
+  Veradigm, ModMed, Greenway Health, Nextech, Availity, and Change Healthcare.
+  The company is backed by Menlo Ventures. It does not currently publish a
+  public developer API, SDKs, or API reference documentation; integrations are
+  delivered through its partner network. Rivet publishes a trust center
+  documenting SOC 2 and HIPAA posture.
 url: https://raw.githubusercontent.com/api-evangelist/rivet-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +36,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Healthcare
+- Revenue Cycle Management
+- Medical Billing
+- Health IT
+- Patient Pricing
+- Payer Contracts
+- Claims
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +55,28 @@ maintainers:
 common:
 - type: Website
   url: https://rivethealth.com
+- type: Login
+  url: https://app.rivethealth.com/login
+- type: Blog
+  url: https://www.rivethealth.com/blog
+- type: Support
+  url: https://www.rivethealth.com/contact-us
+- type: ChangeLog
+  url: https://www.rivethealth.com/release-notes
+- type: Integrations
+  url: https://www.rivethealth.com/partners-and-integrations
+- type: PrivacyPolicy
+  url: https://www.rivethealth.com/privacy/
+- type: TermsOfService
+  url: https://www.rivethealth.com/terms
+- type: TrustCenter
+  url: security/rivet-health-trust-center.yml
+- type: Compliance
+  url: https://trust.rivethealth.com/
+- type: DomainSecurity
+  url: security/rivet-health-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
